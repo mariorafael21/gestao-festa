@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Convidados</title>
+</head>
+<body>
+<!-- Conteúdo -->
+
+    <tr th:each="convidado : ${convidados}">
+        <td th:text="${convidado.nome}"></td>
+        <td th:text="${convidado.quantidadeAcompanhantes}"></td>
+    </tr>
+</body>
+</html>
